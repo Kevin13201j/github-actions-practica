@@ -10,8 +10,13 @@ on:
 
   
 jobs:
-  # This workflow contains a single job called "build"
+  
   build:
+    env:
+      platform:
+      region:
+      account: 123456789012  
+
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -19,3 +24,10 @@ jobs:
      - name: "Mostrar mensaje"
        run: echo "Hola mundo"
 
+     - name: "Mostrando variables de entorno"
+       run: |
+           echo " Esto es el valor de plataform: ${{ env.platform }}"
+           echo " Esto es el valor de region: ${{ env.region }}"
+           echo " Esto es el valor de account: ${{ env.account }}"
+
+    
