@@ -13,8 +13,8 @@ jobs:
   
   build:
     env:
-      platform:
-      region:
+      platform: AWS
+      region: US-east-1
       account: 123456789012  
 
     runs-on: ubuntu-latest
