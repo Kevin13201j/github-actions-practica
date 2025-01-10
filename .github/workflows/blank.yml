@@ -24,7 +24,7 @@ jobs:
      - name: "Mostrar mensaje"
        run: echo "Hola mundo"
 
-     - name: "Mostrando variables de entorno"
+     - name: "Mostrando variables de entorno env"
        run: |
            echo " Esto es el valor de plataform: ${{ env.platform }}"
            echo " Esto es el valor de region: ${{ env.region }}"
